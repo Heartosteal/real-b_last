@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BlockBlast Helper</string>
+    <string name="accessibility_service_label">BlockBlast 자동 배치 서비스</string>
+    <string name="accessibility_service_description">블록블라스트 게임 화면에서 블록을 자동으로 드래그하여 배치합니다.</string>
+</resources>

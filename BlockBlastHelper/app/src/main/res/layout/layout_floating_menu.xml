@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 작은 플로팅 버튼 (대표 이미지 적용) -->
+    <FrameLayout
+        android:id="@+id/btnFloatingToggle"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:elevation="8dp"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/ivFloatingIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_floating_logo" />
+    </FrameLayout>
+
+    <!-- 버튼 클릭 시 아래로 펼쳐지는 기능 목록 -->
+    <LinearLayout
+        android:id="@+id/menuDropdown"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="#E61E222A"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvStatusBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="대기 중"
+            android:textColor="#B0BEC5"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnRecommendMode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="#37474F"
+            android:text="1. 자동 배치 추천기"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAutoPlayMode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="#1565C0"
+            android:text="2. 자동 배치 실행"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnTargetScore"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="#2E7D32"
+            android:text="3. 목표 점수 입력"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnTargetTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="#6A1B9A"
+            android:text="4. 실행 시간 입력"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
